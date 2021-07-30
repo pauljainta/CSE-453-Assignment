@@ -13,6 +13,7 @@ group by district;
 
 select name,district, sum(quantity)
 from fact_table_customer_dim
+where name="sumit"
 group by name,district;
 
 
