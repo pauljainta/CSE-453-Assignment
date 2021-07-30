@@ -21,3 +21,7 @@ group by name,district;
 
 
 select *  from fact_table_customer_dim;
+
+
+
+
