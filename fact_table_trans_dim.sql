@@ -15,6 +15,10 @@ select bank_name,trans_type, sum(quantity)
 from fact_table_trans_dim
 group by bank_name,trans_type;
 
+select bank_name,trans_type, sum(quantity)
+from fact_table_trans_dim
+group by CUBE(bank_name,trans_dim);
+
 
 
 
